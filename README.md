@@ -65,6 +65,85 @@ Authorization: Bearer <token>
 
 ---
 
+---
+
+## API Testing Guide
+
+To quickly test the APIs, use the following steps:
+
+---
+
+### Demo Credentials
+
+#### Admin User
+
+```json
+{
+  "email": "admin@test.com",
+  "password": "123456"
+}
+```
+
+#### 📊 Analyst User
+
+```json
+{
+  "email": "analyst@test.com",
+  "password": "123456"
+}
+```
+
+> The viewers are not present, please register a viewers and update roles using the admin APIs.
+
+---
+
+### Step 1: Login
+
+```
+POST /api/auth/login
+```
+
+Copy the `token` from the response.
+
+---
+
+### Step 2: Add Token in Headers
+
+For all protected routes:
+
+```
+Authorization: Bearer <your_token>
+```
+
+---
+
+### Tools for Testing
+
+You can test APIs using:
+
+* Postman
+* Thunder Client (VS Code)
+* cURL
+
+---
+
+### Deployed API 
+
+```
+https://finance-backend-nu.vercel.app
+```
+
+---
+
+### Notes
+
+* Viewer role cannot create/update/delete records
+* Analyst can manage their own records
+* Admin has full access
+* Role changes require re-login to reflect in JWT
+
+---
+
 ## User Management APIs
 
 ### 🔹 Get All Users (Admin Only)
