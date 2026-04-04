@@ -146,7 +146,7 @@ https://finance-backend-nu.vercel.app
 
 ## User Management APIs
 
-### 🔹 Get All Users (Admin Only)
+### Get All Users (Admin Only)
 
 ```
 GET /api/users
@@ -173,7 +173,7 @@ Authorization: Bearer <admin_token>
 
 ---
 
-### 🔹 Update User Role (Admin Only)
+### Update User Role (Admin Only)
 
 ```
 PATCH /api/users/:id/role
@@ -191,7 +191,7 @@ PATCH /api/users/:id/role
 
 ## Auth APIs
 
-### 🔹 Register User
+### Register User
 
 ```
 POST /api/auth/register
@@ -209,7 +209,7 @@ POST /api/auth/register
 
 ---
 
-### 🔹 Login User
+### Login User
 
 ```
 POST /api/auth/login
@@ -237,7 +237,7 @@ POST /api/auth/login
 
 ## Financial Records APIs
 
-### 🔹 Create Record (Admin, Analyst)
+### Create Record (Admin, Analyst)
 
 ```
 POST /api/records
@@ -257,7 +257,7 @@ POST /api/records
 
 ---
 
-### 🔹 Get Records (Admin, Analyst)
+### Get Records (Admin, Analyst)
 
 ```
 GET /api/records
@@ -280,13 +280,13 @@ GET /api/records?type=expense&category=food&startDate=2026-04-01&endDate=2026-04
 
 ---
 
-### 🔹 Update Record (Owner or Admin)
+### Update Record (Owner or Admin)
 
 ```
 PATCH /api/records/:id
 ```
 
-**Body (Partial Allowed):**
+**Body**
 
 ```json
 {
@@ -296,7 +296,7 @@ PATCH /api/records/:id
 
 ---
 
-### 🔹 Delete Record (Admin Only)
+### Delete Record (Admin Only)
 
 ```
 DELETE /api/records/:id
@@ -306,7 +306,7 @@ DELETE /api/records/:id
 
 ## Dashboard APIs
 
-### 🔹 Get Summary
+### Get Summary
 
 ```
 GET /api/dashboard/summary
