@@ -84,7 +84,7 @@ To quickly test the APIs, use the following steps:
 }
 ```
 
-#### 📊 Analyst User
+#### Analyst User
 
 ```json
 {
